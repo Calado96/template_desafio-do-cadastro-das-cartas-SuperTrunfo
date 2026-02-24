@@ -18,7 +18,7 @@ float area1, pib1 , area2, pib2;
 // CADASTRO DA PRIMEIRA CARTA
 printf("----------SUPER TRUNFO - PAÍSES----------\n");
 printf("Vamos cadastrar a primeira carta:\n");
-printf("Digite a letra de A a H que represeta o estado: ");
+printf("Digite a letra de A a H que representa o estado: ");
 scanf(" %c", &estado1);
 printf("Digite o código da carta, representado pela letra e o numero de 01 a 04: ");
 scanf("%s", codigo_carta1); 
@@ -36,7 +36,7 @@ printf("\n");
 
 // CADASTRO DA SEGUNDA CARTA
 printf("Agora cadastraremos a segunda carta:\n");
-printf("Digite a letra de A a H que represeta o estado: ");
+printf("Digite a letra de A a H que representa o estado: ");
 scanf(" %c", &estado2);
 printf("Digite o código da carta, representado pela letra e o numero de 01 a 04: ");
 scanf("%s", codigo_carta2);
