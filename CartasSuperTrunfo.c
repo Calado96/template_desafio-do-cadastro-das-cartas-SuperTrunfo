@@ -73,5 +73,6 @@ printf("PIB: %.2f\n", pib2);
 printf("Pontos turísticos: %d\n", ponto_turistico2);
 printf("\n");
 
+
 return 0;
 }
