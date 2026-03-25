@@ -10,11 +10,11 @@ int main() {
 char estado1, estado2;
 char Nome_cidade1[50], Nome_cidade2[50]; 
 char codigo_carta1[50], codigo_carta2[50];
-int populacao1, populacao2;
+unsigned long int populacao1, populacao2;
 int ponto_turistico1, ponto_turistico2;
 float area1, pib1 , area2, pib2;
 float Densidade_populacional1, Densidade_populacional2;
-float pib_per_capta1, pib_per_capta2;
+float pib_per_capta1, pib_per_capta2, super_Poder1, super_Poder2;
 
 // Área para entrada de dados
 // CADASTRO DA PRIMEIRA CARTA
@@ -38,7 +38,9 @@ printf("\n");
 
  Densidade_populacional1 = (populacao1 / area1);
  pib_per_capta1 = (float) (pib1 / populacao1);
-
+ super_Poder1 = (float)(populacao1 + area1 + pib1 + ponto_turistico1 + pib_per_capta1 + (1 / Densidade_populacional1)); 
+ 
+ // Exemplo de cálculo para o super poder
 // CADASTRO DA SEGUNDA CARTA
 printf("Agora cadastraremos a segunda carta:\n");
 printf("Digite a letra de A a H que representa o estado: ");
@@ -59,8 +61,10 @@ printf("\n");
 
 Densidade_populacional2 = (populacao2 / area2);
 pib_per_capta2 = (pib2 / populacao2);
+super_Poder2 = (float)(populacao2 + area2 + pib2 + ponto_turistico2 + pib_per_capta2 + (1 / Densidade_populacional2)); 
 
 // Área para exibição dos dados cadastrados
+
 // EXIBIÇÃO DA PRIMEIRA CARTA
 printf("----------PRIMEIRA CARTA----------\n");
 printf("Estado: %c\n", estado1);
@@ -72,6 +76,7 @@ printf("PIB: %.2f\n", pib1);
 printf("Pontos turísticos: %d\n", ponto_turistico1);
 printf("Densidade Populacional:%.2f\n", Densidade_populacional1);
 printf("PIB per Capita: %.2f\n", pib_per_capta1);
+printf("Super Poder: %.2f\n", super_Poder1);
 printf("\n");
 
 
@@ -88,6 +93,33 @@ printf("Densidade Populacional:%.2f\n", Densidade_populacional2);
 printf("PIB per Capita: %.2f\n", pib_per_capta2);
 printf("\n");
 
+//Comparação das cartas
+printf("----------COMPARAÇÃO DAS CARTAS----------\n");
+populacao1 > populacao2 ?
+printf("A cidade %s tem mais população que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
+printf("A cidade %s tem mais população que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+area1 > area2 ?
+printf("A cidade %s tem mais área que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
+printf("A cidade %s tem mais área que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+ponto_turistico1 > ponto_turistico2 ?
+printf("A cidade %s tem mais pontos turísticos que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
+printf("A cidade %s tem mais pontos turísticos que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+pib_per_capta1 > pib_per_capta2 ?
+printf("A cidade %s tem mais PIB per capita que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
+printf("A cidade %s tem mais PIB per capita que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+super_Poder1 > super_Poder2 ?
+printf("A cidade %s tem mais super poder que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
+printf("A cidade %s tem mais super poder que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+
+
+
+
+
+
+
+
+
 
 return 0;
+
 }
