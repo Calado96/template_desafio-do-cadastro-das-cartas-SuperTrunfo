@@ -95,22 +95,16 @@ printf("\n");
 
 //Comparação das cartas
 printf("----------COMPARAÇÃO DAS CARTAS----------\n");
-populacao1 > populacao2 ?
-printf("A cidade %s tem mais população que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
-printf("A cidade %s tem mais população que a cidade %s\n", Nome_cidade2, Nome_cidade1);
-area1 > area2 ?
-printf("A cidade %s tem mais área que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
-printf("A cidade %s tem mais área que a cidade %s\n", Nome_cidade2, Nome_cidade1);
-ponto_turistico1 > ponto_turistico2 ?
-printf("A cidade %s tem mais pontos turísticos que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
-printf("A cidade %s tem mais pontos turísticos que a cidade %s\n", Nome_cidade2, Nome_cidade1);
-pib_per_capta1 > pib_per_capta2 ?
-printf("A cidade %s tem mais PIB per capita que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
-printf("A cidade %s tem mais PIB per capita que a cidade %s\n", Nome_cidade2, Nome_cidade1);
-super_Poder1 > super_Poder2 ?
-printf("A cidade %s tem mais super poder que a cidade %s\n", Nome_cidade1, Nome_cidade2) :
-printf("A cidade %s tem mais super poder que a cidade %s\n", Nome_cidade2, Nome_cidade1);
+if (super_Poder1 > super_Poder2) {
+    printf("A primeira carta venceu pois o super poder é maior.\n");
+} else if (super_Poder1 < super_Poder2) {
+    printf("A segunda carta venceu pois o super poder é maior.\n");
+} else {
+    printf("As duas cartas têm o mesmo poder.\n");
 
+
+
+}
 
 
 
