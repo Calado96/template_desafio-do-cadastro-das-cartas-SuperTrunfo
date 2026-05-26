@@ -96,9 +96,9 @@ printf("\n");
 //Comparação das cartas
 printf("----------COMPARAÇÃO DAS CARTAS----------\n");
 if (super_Poder1 > super_Poder2) {
-    printf("A primeira carta venceu pois o super poder é maior.\n");
+    printf("A cidade %s venceu pois o super poder é maior.\n", Nome_cidade1);
 } else if (super_Poder1 < super_Poder2) {
-    printf("A segunda carta venceu pois o super poder é maior.\n");
+    printf("A cidade %s venceu pois o super poder é maior.\n", Nome_cidade2);
 } else {
     printf("As duas cartas têm o mesmo poder.\n");
 
