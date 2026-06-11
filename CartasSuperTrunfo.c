@@ -103,7 +103,7 @@ if (super_Poder1 > super_Poder2) {
     printf("As duas cartas têm o mesmo poder.\n");
 
 
-
+ 
 }
 
 
